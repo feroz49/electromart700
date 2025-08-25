@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import "../styles/ForgotPasswordPage.css";
+import React, { useState } from 'react';
+import '../styles/ForgotPasswordPage.css';
 
 export default function ForgotPasswordPage() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
 
-  const handleReset = (e) => {
+  const handleReset = e => {
     e.preventDefault();
-    console.log("Reset link sent to:", email);
-    alert("If this email is registered, a reset link has been sent.");
+    console.log('Reset link sent to:', email);
+    alert('If this email is registered, a reset link has been sent.');
     //Connect to backend to send reset email
   };
-
+  //this is comment..........................
   return (
     <div className="forgot-container">
       <div className="forgot-box">
@@ -33,7 +33,7 @@ export default function ForgotPasswordPage() {
             type="email"
             placeholder="Email address"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={e => setEmail(e.target.value)}
             required
           />
 
