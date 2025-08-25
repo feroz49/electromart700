@@ -108,3 +108,66 @@ button:hover {
 .login-text a:hover {
   text-decoration: underline;
 }
+
+
+
+/* ✅ Make the box adjust for smaller screens */
+.login-box {
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* For tablets (<= 768px) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 80%;      /* shrink box */
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* For small phones (<= 480px) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px; /* add some margin */
+  }
+
+  .login-box {
+    width: 100%;   /* take full width */
+    padding: 15px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-text, .forgot-link {
+    font-size: 12px;
+  }
+}
