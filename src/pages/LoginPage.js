@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/LoginPage.css";
+import logo from "../img/LOGO.png";
 import { Link } from "react-router-dom"; //import Link
 
 export default function LoginPage() {
