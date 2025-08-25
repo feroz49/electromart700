@@ -1,0 +1,50 @@
+import React, { useState } from "react";
+import "./ForgotPasswordPage.css";
+
+export default function ForgotPasswordPage() {
+  const [email, setEmail] = useState("");
+
+  const handleReset = (e) => {
+    e.preventDefault();
+    console.log("Reset link sent to:", email);
+    alert("If this email is registered, a reset link has been sent.");
+    // TODO: Connect to backend to send reset email
+  };
+
+  return (
+    <div className="forgot-container">
+      <div className="forgot-box">
+        {/* Logo */}
+        <div className="logo">
+          <div className="logo-icon">⌘</div>
+          <h1 className="logo-text">ElectroMart700</h1>
+        </div>
+
+        {/* Title */}
+        <h2 className="title">Forgot Password</h2>
+        <p className="subtitle">
+          Enter your email address and we’ll send you a reset link.
+        </p>
+
+        {/* Form */}
+        <form onSubmit={handleReset}>
+          <label>Email address</label>
+          <input
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <button type="submit">Send Reset Link</button>
+        </form>
+
+        {/* Back to login */}
+        <p className="back-text">
+          Remember your password? <a href="/">Sign in</a>
+        </p>
+      </div>
+    </div>
+  );
+}
