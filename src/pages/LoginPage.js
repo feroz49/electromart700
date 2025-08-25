@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./LoginPage.css";
-import { Link } from "react-router-dom"; // ✅ import Link
+import "../styles/LoginPage.css";
+import { Link } from "react-router-dom"; //import Link
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -44,7 +44,7 @@ export default function LoginPage() {
             required
           />
 
-          {/* ✅ Forgot Password link */}
+          {/* Forgot Password link */}
           <div className="forgot-link">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>

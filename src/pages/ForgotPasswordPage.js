@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ForgotPasswordPage.css";
+import "../styles/ForgotPasswordPage.css";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -8,7 +8,7 @@ export default function ForgotPasswordPage() {
     e.preventDefault();
     console.log("Reset link sent to:", email);
     alert("If this email is registered, a reset link has been sent.");
-    // TODO: Connect to backend to send reset email
+    //Connect to backend to send reset email
   };
 
   return (
@@ -23,7 +23,7 @@ export default function ForgotPasswordPage() {
         {/* Title */}
         <h2 className="title">Forgot Password</h2>
         <p className="subtitle">
-          Enter your email address and we’ll send you a reset link.
+          Enter your email address and we’ll send you an OTP.
         </p>
 
         {/* Form */}
@@ -37,7 +37,7 @@ export default function ForgotPasswordPage() {
             required
           />
 
-          <button type="submit">Send Reset Link</button>
+          <button type="submit">Send OTP</button>
         </form>
 
         {/* Back to login */}
