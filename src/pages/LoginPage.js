@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/LoginPage.css";
-import logo from "../img/LOGO.png";
-import { Link } from "react-router-dom"; //import Link
+import logo from "../img/LOGO.png";  // your logo
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ export default function LoginPage() {
       <div className="login-box">
         {/* Logo */}
         <div className="logo">
-          <div className="logo-icon">⌘</div>
+          <img src={logo} alt="App Logo" className="logo-img" />
           <h1 className="logo-text">ElectroMart700</h1>
         </div>
 

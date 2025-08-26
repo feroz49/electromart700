@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import '../styles/ForgotPasswordPage.css';
-
+import React, { useState } from "react";
+import "../styles/ForgotPasswordPage.css";
+import logo from "../img/LOGO.png"; 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
 
@@ -14,9 +14,9 @@ export default function ForgotPasswordPage() {
   return (
     <div className="forgot-container">
       <div className="forgot-box">
-        {/* Logo */}
+        {/* Logo*/}
         <div className="logo">
-          <div className="logo-icon">⌘</div>
+          <img src={logo} alt="App Logo" className="logo-img" />
           <h1 className="logo-text">ElectroMart700</h1>
         </div>
 

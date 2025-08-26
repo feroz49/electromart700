@@ -132,6 +132,11 @@ button:hover {
   text-decoration: underline;
 }
 
+
+
+
+
+
 /* Background with gradient */
 .login-container {
   display: flex;
@@ -278,6 +283,14 @@ button:hover {
   .title { font-size: 20px; }
   .logo-text { font-size: 18px; }
 }
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
 
 
 
