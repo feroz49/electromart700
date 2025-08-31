@@ -28,7 +28,7 @@ const HomePage = () => {
           <div className="header-content">
             <div className="logo">
               <img
-                src="https://via.placeholder.com/50x50/4f46e5/ffffff?text=EM"
+                src="src\img\LOGO.png"
                 alt="ElectroMart700 Logo"
                 className="logo-img"
               />
