@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './HomePage.css';
+import '../styles/HomePage.css';
+import '../styles/HeaderActions.css'; // extra css file for header actions
 import Logo from '../img/LOGO.png'; // Logo
 
 const HomePage = () => {
@@ -44,9 +45,7 @@ const HomePage = () => {
                 <li>
                   <Link to="/categories">Categories</Link>
                 </li>
-                <li>
-                  <Link to="/deals">Deals</Link>
-                </li>
+
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
@@ -55,17 +54,38 @@ const HomePage = () => {
                 </li>
               </ul>
             </nav>
+
             <div className="header-actions">
+              {/* Search */}
               <div className="search-bar">
                 <input type="text" placeholder="Search products..." />
                 <button>
-                  <i className="fas fa-search"></i>
+                  <i className="fa-solid fa-search"></i>
                 </button>
               </div>
-              <button className="cart-btn" onClick={handleAddToCart}>
-                <i className="fas fa-shopping-cart"></i>
-                <span className="cart-count">{cartCount}</span>
-              </button>
+
+              {/* Sign In / Sign Up + Cart */}
+              <div className="auth-cart">
+                <div className="auth-buttons">
+                  <Link to="/login" className="auth-btn">
+                    Sign In
+                  </Link>
+                  <Link to="/signup" className="auth-btn signup">
+                    Sign Up
+                  </Link>
+                </div>
+
+                {/* Cart Button */}
+                <button className="cart-btn" onClick={handleAddToCart}>
+                  <i
+                    className="fas fa-shopping-cart"
+                    style={{ marginRight: '5px' }}
+                  ></i>
+                  Cart ({cartCount})
+                </button>
+              </div>
+
+              {/* User Button */}
               <button className="user-btn">
                 <i className="fas fa-user"></i>
               </button>
