@@ -1,0 +1,26 @@
+.category-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #007bff, #00c9a7);
+  color: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.1);
+}
