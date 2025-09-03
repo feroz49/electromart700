@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import "../styles/LoginPage.css";
-import logo from "../img/LOGO.png";  // your logo
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import '../styles/LoginPage.css';
+
+import logo from '../img/LOGO.png'; // your logo
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = e => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
+    console.log('Email:', email);
+    console.log('Password:', password);
   };
 
   return (
@@ -32,7 +33,7 @@ export default function LoginPage() {
             type="email"
             placeholder="Email address"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={e => setEmail(e.target.value)}
             required
           />
 
@@ -41,7 +42,7 @@ export default function LoginPage() {
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={e => setPassword(e.target.value)}
             required
           />
 

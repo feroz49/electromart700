@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ForgotPasswordPage.css';
+
 import logo from '../img/LOGO.png';
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
