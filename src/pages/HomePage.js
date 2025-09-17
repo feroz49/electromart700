@@ -31,7 +31,7 @@ const HomePage = () => {
         <div className="container">
           <div className="header-content">
             <div className="logo">
-              <img src={Logo} alt="ElectroMart700 Logo" className="logo-img" />
+              <img src={Logo} alt="ElectroMart Logo" className="logo-img" />
               <div className="logo-text">ElectroMart700</div>
             </div>
             <nav>
